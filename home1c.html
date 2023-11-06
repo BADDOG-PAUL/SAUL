@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>meow</title>
+<style>
+   body{
+    background-image: url(shacktext.jpg);
+    background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     background-color: black;
+   }
+   h1{
+    font-family: "times new roman", monospace;
+    font-size: 5em;
+    color:antiquewhite;
+    word-wrap: break-word;
+}
+h2{word-wrap: break-word;}
+.typewriter{
+    position: relative;
+    animation-timing-function: steps(0,end);
+}
+.typewriter::after{
+    content: ' |';
+    position: absolute;
+    right: 5;
+    color: transparent;
+    background-color: black;
+    white-space: wrap;
+    width: 100%;
+    animation: typing 10s steps(100), step-end, alternate infinite,
+                line 1s alternate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: steps(0, end);
+}
+@keyframes typing{
+    to{
+        width: 0%;    
+    }
+}
+@keyframes line {
+    100%{
+        color: transparent;
+    from{
+        width:100%;
+    }
+    }}   
+    </style>
+    </head>
+<body>
+    <h1 class="typewriter"><a href="home1d.html"
+        style="position: absolute; left: 180px;"> you might've taken it too far this time.
+    </h1></a>
+</body>
