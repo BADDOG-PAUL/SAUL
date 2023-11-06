@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> But the Lord said to Ananias, “Go! This man is my chosen instrument to proclaim my name to the Gentiles and their kings and to the people of Israel.</title>
+        <style>*{
+    margin: 5;
+    padding: 5;
+}
+body{
+    min-height: 100vh; 
+    display: flex;
+    align-items:left;
+    justify-content: left;
+    background-color: black;
+} 
+h1{
+    font-family: "times new roman", monospace;
+    font-size: 5em;
+    color:antiquewhite;
+    word-wrap: break-word;
+}
+h2{word-wrap: break-word;}
+.typewriter{
+    position: relative;
+    animation-timing-function: steps(0,end);
+}
+.typewriter::after{
+    content: ' |';
+    position: absolute;
+    right: 0;
+    color: transparent;
+    background-color: black;
+    white-space: wrap;
+    width: 100%;
+    animation: typing 10s steps(100), step-end, alternate infinite,
+                line 1s alternate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: steps(0, end);
+}
+@keyframes typing{
+    to{
+        width: 0%;    
+    }
+}
+@keyframes line {
+    100%{
+        color: transparent;
+    from{
+        width:100%;
+    }
+    }   
+}
+#dog {
+    position: absolute;
+    top: 400px;
+    right: 500px;
+}
+#choice{
+    position: absolute;
+    top: 200px;
+    right: 500px;
+}
+#choice2{
+    position: absolute;
+    top: 500px;
+    right:500px;
+}
+</style>
+</head>
+<body>
+    <h1 class="typewriter"> doesn't mean I've forgotten.  </h1>
+    <h2> <a href="home.html"> I love you the way skin loves the bones it's stretched across</a> </h2 id="choice">
+    <img src="BD5d.jpg" width="600px" id="dog">
+</body>
+</html>
