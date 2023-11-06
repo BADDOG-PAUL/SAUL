@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BADDOG! 7e</title>
+        <style>*{
+    margin: 2;
+    padding: 10;
+}
+body{
+    min-height: 100vh; 
+    display: flex;
+    align-items:left;
+    justify-content: left;
+    background-color: black;
+} 
+h1{
+    font-family: "times new roman", monospace;
+    font-size: 5em;
+    color:antiquewhite;
+    word-wrap: true;
+}
+.typewriter{
+    position: relative;
+    animation-timing-function: steps(0,end);
+}
+.typewriter::after{
+    content: ' |';
+    position: absolute;
+    right: 0;
+    color: transparent;
+    background-color: black;
+    white-space: wrap;
+    width: 100%;
+    animation: typing 10s steps(100), step-end, alternate infinite,
+                line 1s alternate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: steps(0, end);
+}
+@keyframes typing{
+    to{
+        width: 0%;    
+    }
+}
+@keyframes line {
+    100%{
+        color: transparent;
+    from{
+        width:100%;
+    }
+    }   
+}
+#dog {
+    position: absolute;
+    top: 400px;
+    right: 500px;
+}
+#choice {
+    position: absolute;
+    top: 400px;
+    right: 1000px
+}
+</style>
+</head>
+<body>
+    <h1 class="typewriter">Even angels can't defy their breeding.
+    </h1>
+    <h2> <a href="home.html"> I love you the way a shattered bone loves the screws that keep it together</a> </h2 id="choice">
+    <img src="BD7e.jpg" width="600px" id="dog">
+</body>
+</html>
